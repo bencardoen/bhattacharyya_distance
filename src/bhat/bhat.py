@@ -1,5 +1,7 @@
 from numba import jit
 import numpy as np
+#@author Ben Cardoen
+# Src https://en.wikipedia.org/wiki/Bhattacharyya_distance
 
 @jit(parallel=True)
 def bhattacharyya(x,y):
